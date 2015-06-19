@@ -38,20 +38,14 @@ module.exports = function (grunt) {
                     }
                 }
             }
-        },
-        coveralls: {
-            default_test: {
-                src: 'src/HelloWorld'
-            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-coveralls');
 
     /* Register tasks. */
-    grunt.registerTask('test', ['connect', 'jasmine', 'coveralls']);
+    grunt.registerTask('test', ['connect', 'jasmine']);
     grunt.registerTask('default', ['test']);
 
 };
