@@ -2,16 +2,16 @@ define(['hello-world'], function (HelloWorld) {
 
     var hallo = new HelloWorld();
 
-    describe("HelloWorld", function () {
+    describe("Module HelloWorld", function () {
 
-        describe("sayHello", function () {
-            it("should say Hello", function () {
+        describe("has a method", function () {
+            it("that should say Hello", function () {
                 expect(hallo.helloWorld()).toEqual("Hello World!");
             })
         });
 
-        describe("get_version", function () {
-            it("should get the JQuery version ", function() {
+        describe("and another", function () {
+            it("that return the JQuery version ", function() {
                 expect(hallo.get_version()).toEqual("2.1.4");
             });
         });
