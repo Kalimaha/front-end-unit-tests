@@ -1,4 +1,4 @@
-define(['HelloWorld'], function (HelloWorld) {
+define(['hello-world'], function (HelloWorld) {
 
     var hallo = new HelloWorld();
 
