@@ -1,5 +1,13 @@
-describe("Hello world", function () {
-    it("says hello", function () {
-        expect(helloWorld()).toEqual("Hello world!");
-    });
+define(['HelloWorld'], function (HelloWorld) {
+
+    describe("HelloWorld", function () {
+
+        describe("sayHello", function () {
+            it("should say Hello", function () {
+                expect(HelloWorld.helloWorld()).toEqual("Hello World!");
+            })
+        })
+
+    })
+
 });
