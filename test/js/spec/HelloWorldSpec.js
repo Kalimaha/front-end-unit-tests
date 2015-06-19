@@ -10,12 +10,12 @@ define(['HelloWorld'], function (HelloWorld) {
             })
         });
 
-        describe("invokeWDS", function () {
-            it("should invoke WDS", function () {
-                hallo.invokeWDS();
-            })
+        describe("get_version", function () {
+            it("should get the JQuery version ", function() {
+                expect(hallo.get_version()).toEqual("2.1.4");
+            });
         });
 
-    })
+    });
 
 });
