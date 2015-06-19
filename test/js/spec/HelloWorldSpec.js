@@ -8,7 +8,13 @@ define(['HelloWorld'], function (HelloWorld) {
             it("should say Hello", function () {
                 expect(hallo.helloWorld()).toEqual("Hello World!");
             })
-        })
+        });
+
+        describe("invokeWDS", function () {
+            it("should invoke WDS", function () {
+                hallo.invokeWDS();
+            })
+        });
 
     })
 

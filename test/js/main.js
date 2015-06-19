@@ -1,9 +1,11 @@
 require.config({
     baseUrl: '../src',
     paths: {
+        'jquery': ['../test/js/libs/jquery.min'],
         'jasmine': ['../test/js/libs/jasmine'],
         'jasmine-html': ['../test/js/libs/jasmine-html'],
-        'jasmine-boot': ['../test/js/libs/boot']
+        'jasmine-boot': ['../test/js/libs/boot'],
+        'hello-world-spec': ['../test/js/spec/HelloWorldSpec']
     },
     shim: {
         'jasmine-html': {
@@ -16,7 +18,7 @@ require.config({
 });
 
 require(['jasmine-boot'], function () {
-    require(['../test/js/spec/HelloWorldSpec'], function () {
+    require(['hello-world-spec'], function () {
         window.onload();
     })
 });
