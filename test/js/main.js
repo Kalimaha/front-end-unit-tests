@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: './src',
+    baseUrl: '../src',
     paths: {
         'jquery': ['../test/js/libs/jquery.min'],
         'jasmine': ['../test/js/libs/jasmine'],

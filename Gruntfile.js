@@ -25,7 +25,9 @@ module.exports = function (grunt) {
                             'jasmine-html': ['../test/js/libs/jasmine-html'],
                             'jasmine-boot': ['../test/js/libs/boot'],
                             'hello-world-spec': ['../test/js/spec/HelloWorldSpec'],
-                            'hello-world': ['../src/HelloWorld']
+                            'hello-world': ['../src/HelloWorld'],
+                            'wds-client': ['../src/WDSClient'],
+                            'wds-client-spec': ['../test/js/spec/WDSClientSpec']
                         },
                         shim: {
                             'jasmine-html': {
