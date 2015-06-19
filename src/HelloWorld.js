@@ -1,17 +1,15 @@
 define([], function () {
 
-    var myLibrary = (function () {
+    'use strict';
 
-        function helloWorld() {
-            return "Hello World!";
-        }
+    function HALLO() {
 
-        return {
-            helloWorld: helloWorld
-        };
+    }
 
-    })();
+    HALLO.prototype.helloWorld = function() {
+        return 'Hello World!';
+    };
 
-    return myLibrary;
+    return HALLO;
 
 });

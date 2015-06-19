@@ -1,10 +1,12 @@
 define(['HelloWorld'], function (HelloWorld) {
 
+    var hallo = new HelloWorld();
+
     describe("HelloWorld", function () {
 
         describe("sayHello", function () {
             it("should say Hello", function () {
-                expect(HelloWorld.helloWorld()).toEqual("Hello World!");
+                expect(hallo.helloWorld()).toEqual("Hello World!");
             })
         })
 
