@@ -5,6 +5,11 @@ node_js:
 
 before_install:
   - npm install -g grunt-cli
+  
+install:
+  - wget https://github.com/FENIX-Platform/wds/archive/5.1.zip
+  - unzip 5.1.zip
+  - mvn clean install -Dmaven.test.skip
 
 after_success:
   - coveralls
