@@ -9,7 +9,7 @@ before_install:
 install:
   - wget https://github.com/FENIX-Platform/wds/archive/5.1.zip
   - unzip 5.1.zip
-  - mvn clean install -Dmaven.test.skip
+  - mvn clean install -Dmaven.test.skip wds-5.1
 
 after_success:
   - coveralls
